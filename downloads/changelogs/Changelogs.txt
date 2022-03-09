@@ -1,0 +1,17 @@
+Para español traduce la página,
+por favor
+
+Why the same device tree? Simple, I improve the same tree for both ROMs, I don't need a tree for each ROM if similar errors arise.
+
+• Only device side
+
+- Improve KCAL settings's UI
+- General improvements
+- FW 12.5.5
+- Fix GCAM issues
+- OpenGL as default
+- Improve Refresh rate per app
+ (XiaomiParts)
+- Fixed back gesture issue
+- Address few denials (SELINUX)
+- MatlogX included (Only EVOX)
