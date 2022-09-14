@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Ardjlon Builds</title>
+<link rel="icon" href="images/icon.png"/>
+<body style="display:none">
+<style type="text/css">
+	body{display:block !important}
+
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+	-ms-user-select: none;
+!important;
+	-moz-user-select: none;
+!important;
+	-webkit-user-select: none;
+!important;
+	-webkit-touch-callout: none;
+!important;
+	-khtml-user-select: none;
+!important;
+	user-select: none;
+!important;
+	    background-color: darkgray;
+ !important;
+
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+	
+</style>
+<style type="text/css">
+.btnout {
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #121214;
+	color: white;
+	padding: 10px 15px 0px 15px;
+!important;
+	text-align: center;
+!important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 900;
+}
+.out {
+	border-color: #3ddb83;
+	fill: white;
+}
+.out:hover {
+	border-color: #3ddb83;
+	background: #3ddb83;
+	fill: #121214;
+	color: #121214;
+	-webkit-text-stroke: 0.7px #121214;
+	text-shadow: 0 0 0.8px #121214;
+       -moz-text-fill-color: #121214;
+    -webkit-text-fill-color: #121214;
+       -moz-text-stroke-color: #121214;
+    -webkit-text-stroke-color: #121214;
+       -moz-text-stroke-width: 0.5px;  
+    -webkit-text-stroke-width: 0.5px;
+  	-webkit-text-stroke: 0.7px #121214;
+	text-shadow: 0 0 0.4px #121214;*/
+}	
+a:link, a:visited {
+	white-space: nowrap;
+!important;
+	text-decoration: none;
+!important;
+
+}
+h1 {
+  text-align: center; !important; 
+}
+.h1 {
+	letter-spacing: 0.25em;
+	word-spacing: 0.25em;
+}
+input {
+	letter-spacing: 0.2em;
+}
+.styleDiv {
+	width: 400px !important;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+}
+.stylebase {
+	border-radius: 10px;
+	background-repeat: no-repeat;
+}
+.stylebg {
+	width: 400px !important;
+	border-radius: 10px;
+	background-color: #121214;
+!important;
+	border: 0.01px solid;
+	box-shadow: 0px 0px 0px 1px rgba(61,219,132,1.00);
+}
+.maskstyle {
+	-webkit-mask-image: url(images/profilemask.svg);
+	mask-image: url(images/profilemask.svg);
+	-webkit-mask-size: 216px;
+	mask-size: 216px;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	margin: 6px auto auto auto;
+}
+.margin {
+	margin: 6px auto auto auto;
+	position: center;
+}
+.styletext {
+	color: #3ddb83;
+	fill: #3ddb83;
+	text-align: center
+}
+.container {
+	position: relative;
+}
+.center2 {
+	top: 360px;
+	width: 300px;
+}
+.prop {
+	height: 3px;
+	width: 375px;
+	left: 0px;
+	top: 0px;
+	right: auto;
+	bottom: auto;
+}
+.shadow {
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 15));
+}
+.tab1 {
+	float: left;
+	padding: 5px;
+	margin: 5px auto 5px 105px;
+}
+.tab2 {
+	float: right;
+	padding: 5px;
+	margin: 5px 106px 5px auto;
+}
+.stylehr {
+	border-top: 0.5px solid #3ddb83;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+	.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body width="100%" height="100%" bgcolor="#000000" style="margin: 0;" yahoo="yahoo" >
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#000000" style="border-collapse:collapse; border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px;">
+  <tr>
+  
+  <td class="fade-in" bgcolor="#000000"><center style="width: 100%;">
+      <div style="display:none; font-size:1px; line-height:1px; max-height:0px;max-width:0px; opacity:0; overflow: hidden; mso-hide:all; font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+      <div class="stylebg" style="width:400px; height:700px;">
+        <div class="stylebase shadow" style="width:400px; height: 700px; background-image: url(images/base_2.svg);"/>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 400px; border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px;">
+          <td style="padding: 20px 0; text-align: center">&nbsp;</td>
+        </table>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 400px; border-radius: 0px 0px 10px 10px; -webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px;">
+          <div style="height:85px;"><br>
+          </div>
+          <div> <img src="images/android.svg" alt="" style="width: 225px; height: 150px;"/> </div>
+          <table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td class="fade-in" style="padding: 20px; font-family: sans-serif; font-size: 25px; mso-height-rule: exactly; line-height: 0px; color: #FFFFFF; text-align: center; font-weight: bold;">AOSP BUILDS</td>
+            </tr>
+            <td><div style="height:7px;"><br>
+                </div>
+                <h1 class="styletext fade-in" style="margin: -5px 0px 25px 0px; padding: 0px; font-family: sans-serif; font-size: 9px; mso-height-rule: exactly; text-align: center; font-weight: normal;">CUSTOM AOSP ROMS</h1>
+                <h1 class="styletext fade-in" style="padding: 0px; font-family: sans-serif; font-size: 9px; mso-height-rule: exactly; line-height: 15px; text-align: center; font-weight: normal;"></h1></td>
+            <tr></tr>
+            <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+              <tr>
+                <table>
+                  <tr>
+                    <center style="width: 400px;">
+                      <a href="https://t.me/ardjlonsupport" style="border-radius: 10px; height:60px; width:85px; line-height: 10px;" class="btnout out fade-in">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 230.27 230.77">
+                        <g id="Capa_2" data-name="Capa 2">
+                          <g id="Capa_2-1" data-name="Capa 1">
+                            <path d="M53.92,186.31c.43-6.05-7.08-11.39-12.64-9.7-4.81,1.46-9.71,2.64-14.58,3.9-4.2,1.09-6.7.13-9-3.54-1.7-2.75-3.34-5.54-4.81-8.42-1.72-3.34-1.26-5.91,1.3-8.66,3.59-3.86,7.3-7.62,10.81-11.56A10,10,0,0,0,25.54,135a9.9,9.9,0,0,0-5.42-3.55c-4.33-1.13-8.67-2.22-13-3.38a16.42,16.42,0,0,1-3.24-1.21,6.33,6.33,0,0,1-3.81-5.68c-.1-4-.14-7.91.07-11.86.16-3,2.07-4.91,4.89-5.72,4.71-1.36,9.47-2.6,14.22-3.85a11.13,11.13,0,0,0,8.21-13.84c-.62-2.23-2.2-3.76-3.77-5.31-3.3-3.26-6.61-6.51-9.86-9.81a6.48,6.48,0,0,1-1.09-8.44c1.68-3,3.4-6,5.17-8.91,2-3.29,4.65-4.35,8.38-3.36C31.17,51.34,36,52.79,40.88,54c6.44,1.52,11.78-2.24,13.06-8.73a7.53,7.53,0,0,0-.23-3.49c-1.32-5.1-2.71-10.19-4-15.31a6.74,6.74,0,0,1,3.16-8c3.33-2.05,6.75-4,10.21-5.79,2.61-1.36,5.17-.76,7.43,1.48,3.64,3.6,7.2,7.29,10.91,10.81s9,4.16,13,1.61A10.11,10.11,0,0,0,99,20.44c1.23-4.55,2.42-9.11,3.61-13.66s3-6.1,7.65-6.54c1.11-.1,2.23-.14,3.35-.16,2,0,4-.12,6,0,3.75.12,6.09,1.79,7.25,5.35s2.08,7.13,3.1,10.7c.42,1.46.82,2.92,1.24,4.38a10.32,10.32,0,0,0,17.13,4.83c2.74-2.52,5.27-5.26,8.05-7.72a37.39,37.39,0,0,1,5.88-4.3,7.18,7.18,0,0,1,7.76.19c2.88,1.8,5.65,3.78,8.36,5.82,2.41,1.83,2.87,4.37,2.11,7.22-1.27,4.83-2.55,9.65-3.76,14.49C175,48,178.8,53.53,186,54.24a11.47,11.47,0,0,0,3.89-.46c4.57-1.16,9.11-2.43,13.66-3.64,3.77-1,6.57.06,8.69,3.31,1.58,2.41,3.12,4.84,4.6,7.31,2.33,3.9,1.88,7.44-1.32,10.67S209,78,205.71,81.18s-3.87,6.82-2.77,11a9.69,9.69,0,0,0,7.56,7.36q6.85,1.74,13.68,3.56c4.06,1.07,5.75,2.9,6,7,.2,3.7.14,7.43,0,11.14-.14,3.21-2,5.23-5.08,6.07-4.55,1.24-9.11,2.42-13.66,3.64-3.4.91-6.32,2.47-8,5.79a10.21,10.21,0,0,0,1.93,12c3.32,3.35,6.68,6.66,10,10a14.89,14.89,0,0,1,2,2.52,6.07,6.07,0,0,1,.15,6.49c-2,3.55-4.09,7.05-6.18,10.55a5.05,5.05,0,0,1-5.74,2.54c-4.44-1-8.83-2.21-13.24-3.31-2.44-.62-4.86-1.34-7.44-.93a10.06,10.06,0,0,0-8.44,12.2c1.09,4.83,2.52,9.57,3.78,14.36.66,2.51.89,5-.9,7.19a3.83,3.83,0,0,1-1,.88c-3.63,2.19-7.24,4.4-10.91,6.5-2.86,1.63-5,1.39-7.44-.82-1.82-1.62-3.5-3.4-5.23-5.11-2.16-2.14-4.24-4.37-6.48-6.42a10.21,10.21,0,0,0-17,4.84c-1.23,4.29-2.34,8.63-3.52,12.94a19,19,0,0,1-.62,1.94,7.91,7.91,0,0,1-8,5.57c-3.23,0-6.47-.08-9.7-.26-3.47-.21-5.67-2.16-6.67-5.74q-1.84-6.63-3.62-13.29a12.45,12.45,0,0,0-3.48-6.32,10,10,0,0,0-13.62.11c-2.36,2.1-4.55,4.39-6.8,6.61-1.63,1.59-3.21,3.24-4.87,4.8-2.08,1.93-4.56,2.69-7.18,1.43-3.52-1.7-7-3.56-10.31-5.59A6.73,6.73,0,0,1,49.76,205c.19-1,.42-2,.66-3,1.09-4.5,2.21-9,3.28-13.5A16.86,16.86,0,0,0,53.92,186.31Zm168.48-66.2c0-2.67,0-5.15,0-7.62,0-1.57-.3-2-1.8-2.37q-5.39-1.38-10.8-2.72c-5.72-1.42-10.57-4.09-13-9.75-3.46-8-3.14-15.92,3.92-22.34,3-2.69,5.68-5.63,8.51-8.47,1.12-1.13,1.18-1.81.33-3.18s-1.89-3-2.78-4.48A2.23,2.23,0,0,0,204,58c-.39.09-.77.22-1.15.31-5.11,1.28-10.1,3.13-15.46,3.07-2.08,0-4.24.22-6.2-.28a16.26,16.26,0,0,1-9.14-6.24c-3.6-4.77-4.31-10.11-2.88-15.81,1.07-4.26,2.2-8.5,3.32-12.75a2.1,2.1,0,0,0-.75-2.45c-1.52-1.1-3.07-2.17-4.62-3.22a2,2,0,0,0-2.55.08c-1.26,1.05-2.57,2-3.77,3.16-2.53,2.38-4.95,4.89-7.52,7.23a17.06,17.06,0,0,1-10.76,4.73c-9.38.46-16.49-4.82-19.06-14-1.12-4-2.2-8.08-3.31-12.13-.47-1.69-1.13-2.13-2.84-2-1.44.08-2.88.14-4.32.15-2.42,0-2.83.36-3.45,2.74-1.09,4.25-2.08,8.54-3.37,12.73a18,18,0,0,1-24,11.24c-3.69-1.51-6.43-4.25-9.16-7-2.46-2.51-5-5-7.53-7.5-2.11,1.2-4.22,2.42-6.33,3.61-1.71,1-1.89,1.37-1.36,3.29,1,3.58,2,7.16,3,10.73A20,20,0,0,1,61,49.19,18.37,18.37,0,0,1,37.9,61.25c-4.14-1.2-8.31-2.29-12.49-3.37a1.42,1.42,0,0,0-1.26.33c-1.52,2.44-2.94,4.93-4.51,7.61,2.58,2.53,5.19,5,7.7,7.56,2.29,2.34,4.8,4.5,6.35,7.47,5.4,10.39-.64,23.32-12.28,26.3-3.95,1-7.89,2-11.82,3.09a2.2,2.2,0,0,0-2,2.54c0,1.64,0,3.28,0,4.92,0,2.14.36,2.62,2.45,3.15,4.1,1,8.21,2.06,12.3,3.16,11.54,3.09,17.78,17.58,9.63,28-1.76,2.27-3.8,4.32-5.75,6.43-2.11,2.28-4.26,4.53-6.38,6.77,1.16,2.05,2.27,4,3.36,5.94,1,1.76,1.47,2,3.39,1.45l12.71-3.46c9.13-2.47,19.54,3.64,21.87,12.82,1,4,.38,7.93-.63,11.83-1.08,4.17-2.17,8.33-3.27,12.57,2.17,1.15,4.28,2.27,6.4,3.37,1.66.86,2.12.77,3.47-.57,3.1-3.06,6.17-6.16,9.31-9.18a17.81,17.81,0,0,1,29.78,7.86c1.31,4.32,2.43,8.69,3.64,13,.43,1.52,1,1.93,2.57,2s3.12,0,4.67.13c2.49.12,2.91-.2,3.55-2.66,1.1-4.21,2.16-8.43,3.38-12.61,3.6-12.33,19.12-17,28.77-8.62,2.35,2,4.49,4.32,6.69,6.54,1.7,1.71,3.34,3.49,5,5.29,2.12-1.24,4.32-2.54,6.53-3.82,1.66-1,1.87-1.46,1.36-3.32-1.12-4.08-2.27-8.15-3.37-12.24a18.24,18.24,0,0,1,10.45-21.33c4.62-2,9.28-1.62,14-.34,3.43.94,6.86,1.85,10.3,2.76,1,.25,1.93.36,2.55-.68,1.37-2.34,2.73-4.69,4.1-7.06a7.26,7.26,0,0,0-.5-.56l-10-10a18,18,0,0,1,.41-26.07c3.09-2.88,6.92-4.2,10.9-5.21C214.93,122.08,218.63,121.09,222.4,120.11Z"/>
+                            <path d="M59.27,115.11C59.09,83.86,84.79,59,117,59.52c29.14.44,54.13,25.18,53.79,56.89-.32,29.36-24.73,54.77-54.68,54.73C82.77,171.1,59.17,145.57,59.27,115.11Zm7.13,0c.1,27.68,21.17,48.68,49.21,48.91,25.92.2,47.26-21.57,47.93-46.89.72-27.42-20.5-50.22-47.37-50.42C88.46,66.46,66.65,87.68,66.4,115.06Z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <h1 style="padding: 0px; font-family: sans-serif; font-size: 8px; mso-height-rule: exactly; line-height: 15px;  text-align: center;">SUPPORT GROUP</h1>
+                      </a>
+                    </center>
+                    <br>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <center style="width: 400px;">
+                      <a href="downloads/downloads.html" style="border-radius: 10px; height:60px; width:85px; line-height: 10px;" class="btnout out fade-in">
+                      <svg id="uuid-e8387024-d797-4843-995b-b2cd472d0f00" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M12.491,24.568c-.476,0-.951-.196-1.348-.591-2.322-2.307-4.637-4.621-6.951-6.935l-2.618-2.617c-.548-.547-.676-1.224-.37-1.957,.208-.5,.68-1.095,1.743-1.095h.007c1.312,.003,2.623,.002,3.988,.002h1.044v-3.256c-.002-1.9-.003-3.801,.004-5.701,.004-1.345,.641-1.973,2.001-1.979,1.688-.008,3.376-.008,5.064,0,1.36,.005,1.997,.634,2.003,1.979,.008,1.927,.007,3.854,.006,5.781v3.157c.129,.008,.249,.015,.37,.015,1.389,.003,2.777,.003,4.167,.002h.419c.814,0,1.43,.402,1.779,1.164,.213,.466,.317,1.169-.394,1.882l-1.857,1.859c-2.566,2.568-5.132,5.137-7.707,7.696-.397,.395-.873,.591-1.349,.591ZM2.946,12.302c-.467,0-.732,.157-.886,.524-.16,.382-.109,.665,.17,.943l2.618,2.617c2.314,2.313,4.628,4.627,6.95,6.933,.428,.424,.961,.423,1.388,0,2.574-2.559,5.14-5.126,7.704-7.694l1.858-1.859c.336-.336,.325-.578,.206-.839-.2-.437-.48-.623-.936-.623h-.419c-1.388,0-2.778,0-4.169-.002-.178,0-.354-.012-.555-.025l-.742-.042v-4.033c.002-1.926,.003-3.852-.005-5.777-.004-.835-.226-1.052-1.079-1.056-1.687-.007-3.371-.007-5.056,0-.853,.003-1.074,.22-1.077,1.054-.006,1.899-.005,3.798-.004,5.698v4.185s-1.971,0-1.971,0c-1.365-.001-2.678,0-3.99-.002h-.005Z"/>
+                        <rect width="25" height="25" style="fill: none;"/>
+                      </svg>
+                      <h1 style="padding: 0px; font-family: sans-serif; font-size: 8px; mso-height-rule: exactly; line-height: 15px;  text-align: center;">DOWNLOADS</h1>
+                      </a>
+                    </center>
+                    <br>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <center style="width: 400px;">
+                      <a href="donors/donors.html" style="border-radius: 10px; height:60px; width:85px; line-height: 10px;" class="btnout out fade-in">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 242.7 282.19">
+                        <g id="Capa_1" data-name="Capa 1">
+                          <g id="Capa_1-1" data-name="Capa 1">
+                            <path d="M218.11,90.92a4.1,4.1,0,0,1-1.62-3.58c0-5.78.23-11.63-.55-17.33A80.71,80.71,0,0,0,136.51.12C104.77-.11,73,.06,41.28.06c-5.72,0-7.17,1.4-8,7.1C31.05,23.74,28.7,40.3,26.37,56.87q-4.14,29.45-8.27,58.89-4.41,31.44-8.82,62.9Q4.71,211.29.09,243.9c-.58,4.15,1.78,6.87,6,7.09.72,0,1.43,0,2.15,0H59c-1.47,8.16-2.89,16-4.29,23.89-.77,4.3,1.52,7.26,5.83,7.27q26.54.06,53.09,0a5.51,5.51,0,0,0,5.85-5.09q3.15-21.9,6.27-43.79c1.12-7.76,2.26-15.51,3.42-23.48h2.7c13.81,0,27.61,0,41.42,0,10.39,0,20.43-1.78,29.75-6.35,24.86-12.19,38.83-32,39.66-59.89C243.31,122.18,234.39,104.69,218.11,90.92Zm-160,153.24H7c.65-4.67,1.25-9.2,1.89-13.73q5.43-38,10.87-75.94Q24.94,118.23,30.12,82q5.13-36,10.2-72c.25-1.78.74-2.48,2.74-2.47,31,.06,62-.08,93,.08,35.33.18,62.58,22.65,70.61,55.46,10.31,42.12-17,83.69-60.83,88.9a85.72,85.72,0,0,1-10,.52c-19.14.05-38.28,0-57.43,0-5.75,0-7.45,1.34-8.26,6.95q-4.7,32.48-9.27,65C60,230.92,59,237.5,58.08,244.16ZM193,197.93a68.3,68.3,0,0,1-19.69,2.73c-16.26,0-27.52,0-43.78,0-6.6,0-7-.88-7.93,5.51Q116.74,239.1,112,272c-.13.89-.32,1.77-.5,2.71H62.31L78.8,160.66h54.06c40.25,0,71.8-22.72,83.81-60.79.11-.37,10.2,9.48,13.32,16C245.47,148.35,228,187.51,193,197.93Z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <h1 style="padding: 0px; font-family: sans-serif; font-size: 8px; mso-height-rule: exactly; line-height: 15px;  text-align: center;">DONATE</h1>
+                      </a>
+                    </center>
+                  </tr>
+                </table>
+                <table>
+                  <center style="width: 400px;">
+                    <tr>
+                      <td align="center"></td>
+                    </tr>
+                    <div style="height:10px;"><br>
+                    </div>
+                    <h1 class="styletext fade-in" style="padding: 0px; font-family: sans-serif; font-size: 9px; mso-height-rule: exactly; line-height: 15px; text-align: center; font-weight: normal;">Powered by</h1>
+                    <h1 class="fade-in" style="padding: 0px; font-family: sans-serif; font-size: 9px; mso-height-rule: exactly; line-height: 15px; text-align: center; font-weight: normal; color: white">Ardany Jol&oacute;n (Ardjlon)</h1>
+                  </center>
+                </table>
+              <tr> </tr>
+              </tr>
+              
+            </table>
+            <br>
+          </table>
+          <tr> </tr>
+        </table>
+      </div>
+    </center></td>
+  </tr>
+  
+</table>
+</body>
+</html>
