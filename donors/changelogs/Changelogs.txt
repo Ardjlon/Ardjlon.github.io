@@ -1,0 +1,8 @@
+Para español traduce la página,
+por favor
+
+Why the same device tree? Simple, I improve the same tree for both ROMs, I don't need a tree for each ROM if similar errors arise.
+
+• Only device side
+
+- Added Pixel Launcher Mod by Team Files

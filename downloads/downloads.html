@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>Downloads for POCO X3</title>
+<link rel="icon" href="images/icon.png"/>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+</style>
+<!-- Progressive Enhancements -->
+<style type="text/css">
+.btnout {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #191919;
+    color: white;
+    padding: 0px 10px 0px 10px;
+!important;
+    font-size: 16px;
+    text-align: center;
+!important;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 5px;
+}
+.out {
+    border-color: #FFBA03;
+    color: white;
+    fill: whitesmoke;
+}
+.out:hover {
+    border-color: #FFBA03;
+    background: #FFBA03;
+    color: white;
+    fill: white;
+}
+a:link, a:visited {
+    padding: 5px 15px 40px 15px;
+    text-align: center;
+!important;
+    white-space: nowrap;
+!important;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+!important;
+}
+h1 {
+    letter-spacing: 0.25em;
+    word-spacing: 0.25em;
+    color: aliceblue;
+!important;
+}
+input {
+    letter-spacing: 0.2em;
+}
+.styleDiv {
+    width: 400px !important;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+.stylebase {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+.stylebg {
+    width: 400px !important;
+    border-radius: 10px;
+    background-color: #121214;
+!important;
+    border: 0.01px solid;
+    /* border-color: #FFBA03;*/
+    box-shadow: 0px 0px 0px 1px rgba(255,186,0,0.3);
+}
+.maskstyle {
+    -webkit-mask-image: url(images/profilemask.svg);
+    mask-image: url(images/profilemask.svg);
+    -webkit-mask-size: 216px;
+    mask-size: 216px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    margin: 6px auto auto auto;
+}
+.margin {
+    margin: 6px auto auto auto;
+    position: center;
+}
+.styletext {
+    color: #FFBA03;
+    fill: #FFBA03;
+    text-align: center
+}
+</style>
+<style>
+.container {
+    position: relative;
+}
+.center2 {
+    top: 360px;
+    width: 300px;
+}
+.prop {
+    height: 3px;
+    width: 375px;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+}
+.shadow {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 15));
+}
+.tab1 {
+    float: left;
+    padding: 5px;
+    margin: 5px auto 5px 105px;
+}
+.tab2 {
+    float: right;
+    padding: 5px;
+    margin: 5px 105px 5px auto;
+    text-align: center;
+}
+.stylehr {
+    border-top: 0.5px solid #FFBA03;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.scrollbar {
+    max-width: 400px;
+    /*max-height: auto;*/
+    overflow: scroll;/*border: 1px solid gray;*/
+	/*pointer-events: auto; !important;*/
+}
+iframe {
+    width: 287px;
+    height: 45vh;
+    pointer-events: none;
+}
+	/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+display: none;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+    scrollbar-height: none; /* Firefox */
+}
+.unselectable {
+    -webkit-touch-callout: none;
+!important; /* iOS Safari */
+    -webkit-user-select: none;
+!important;/* Safari */
+    -khtml-user-select: none;
+!important;/* Konqueror HTML */
+    -moz-user-select: none;
+!important;/* Old versions of Firefox */
+    -ms-user-select: none;
+!important;/* Internet Explorer/Edge */
+    user-select: none;
+!important;/* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+</style>
+</head>
+<body width="100%" height="100%" bgcolor="#0c0c0d" style="margin: 0;" yahoo="yahoo" >
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#0c0c0d" style="border-collapse:collapse; border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px;">
+  <tr>
+  
+  <td bgcolor="#0c0c0d"><center style="width: 100%;">
+      <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+      <div class="stylebg" style="width:400px; height:700px; background-image: url(images/x3.svg); background-repeat: no-repeat">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 400px; height: 50px; border-color: aqua; border-radius: 10px 10px 0px 0px; -webkit-border-radius: 10px 10px 0px 0px; -moz-border-radius: 10px 10px 0px 0px;">
+          <td><a href="../index.html" style="margin-top: 23px; margin-left: 25px; padding: 7px 9px 7px 5px; border-radius: 100%; width:25px; height: 25px;" class="btnout out">
+              <svg id="uuid-b3e14fe6-025c-4eda-bdf0-873950f2e2a7" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" width="15" height="25.737" viewBox="0 0 15 25.737">
+                <g id="uuid-dd16b6de-80df-4d17-97b5-7bcbf5138020" data-name="Capa 1">
+                  <polygon points="15 2.132 12.868 0 0 12.867 .001 12.869 0 12.87 12.868 25.737 15 23.605 4.264 12.869 15 2.132" style="fill: #fff;"/>
+                </g>
+              </svg>
+              </a></td>
+        </table>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 400px; border-radius: 0px 0px 10px 10px; -webkit-border-radius: 0px 0px 10px 10px; -moz-border-radius: 0px 0px 10px 10px;">
+          <tr>
+            <div> <img src="images/downloadicon.svg" alt="" style="width: 225px; height: auto;"/> </div>
+          </tr>
+          <h1></h1>
+          <tr>
+          
+          <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="styletext" style="padding: 20px; font-family: sans-serif; font-size: 25px; mso-height-rule: exactly; line-height: 0px; text-align: center; font-weight: bold;">DOWNLOADS</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td></td>
+              </tr>
+              <!-- Buttons -->
+              <tr></tr>
+              <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                <br>
+                <br>
+                <tr>
+                
+                <table>
+                  <tr>
+                  <tr>
+                    <center style="width: 400px;">
+                      <a href="https://ancientrom.xyz/download_list.php?device_id=220822051247&device_model=X3%20NFC&device_code_name=Surya/Karna" style="border-radius: 10px; height:15px; width:60px;" class="btnout out">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 355.09 312.61">
+                        <g id="Capa_3" data-name="Capa 3">
+                          <g id="Capa_3-1" data-name="Capa 3">
+                            <path d="M175.82,8c-9.63,9.66-22.54,22.59-35.15,35.21L106.49,77.46,46.08,138l-.24.23-.91.93A13.79,13.79,0,0,0,45,159c3.61,3.64,7.29,7.33,10.84,10.89l3.79,3.8c12.86,12.89,30.79,30.87,48.69,48.8l46.79,46.89c-1.21,1.24-2.43,2.47-3.64,3.7-2.94,3-6,6.07-9,9.11l-44.3-44.29L9.34,149.07,24.42,134c40.22-40.22,90.25-90.25,126-126h25.45m9.77-8H148.18a11.13,11.13,0,0,0-3.12,2C104.05,43.05,43,104.08,2,145.1c-.26.27-.54.53-.78.81a4.74,4.74,0,0,0,.2,6.54l.88.89L138.14,289.19c.39.39.76.78,1.16,1.14a4.77,4.77,0,0,0,3.24,1.36,4.53,4.53,0,0,0,3.24-1.43c5.77-5.81,11.5-11.66,17.25-17.49a4.83,4.83,0,0,0-.08-6.83c-.37-.33-.71-.7-1.06-1.06-25.53-25.6-71.07-71.21-96.6-96.81-4.87-4.89-9.75-9.76-14.61-14.67a5.86,5.86,0,0,1,0-8.67c.34-.36.7-.71,1.05-1.06l60.41-60.56c18.26-18.3,56.52-56.6,74.77-74.91a11.71,11.71,0,0,0,1.26-1.38A4.22,4.22,0,0,0,186.59.48c-.33-.17-.66-.32-1-.48Z"/>
+                            <path d="M212.69,30.23l36.48,36.53C265,82.58,281,98.67,291.6,109.26l6.27,6.28,48.21,48.3C324,185.92,253.2,256.67,205.31,304.61H179L308.92,174.69l.39-.39c.44-.42,1-1,1.52-1.56a13.85,13.85,0,0,0,3.06-13.46,13.15,13.15,0,0,0-3.47-5.69L213.21,56.4,199.87,43.05l2-2,10.83-10.83m.22-9.72a4.2,4.2,0,0,0-1.14.17,5.18,5.18,0,0,0-2.2,1.35L192.2,39.41l-.35.35A4.81,4.81,0,0,0,192,46.5c.22.19.41.41.61.61C223.33,77.83,274,128.54,304.77,159.25a5.34,5.34,0,0,1,1.44,2.28,5.92,5.92,0,0,1-1.37,5.91c-.5.56-1,1.06-1.58,1.59L168.54,303.74a21.66,21.66,0,0,0-1.56,1.62,4.25,4.25,0,0,0,2.46,7c.27.05.6,0,.78.27h36.92a6.91,6.91,0,0,0,3.73-2.25c40.58-40.62,101.18-101.21,141.79-141.79,1.34-1.34,2.4-2.7,2.43-4.66v-.75c-.34-.42-.15-1-.33-1.43a6.26,6.26,0,0,0-1.56-2.08l-55.94-56C277.12,83.42,237,43.24,216.84,23.06c-.56-.56-1.12-1.12-1.71-1.65a3.21,3.21,0,0,0-2.22-.9Z"/>
+                            <path d="M172.38,83.31a89.94,89.94,0,0,1,11.94,20.87A135.38,135.38,0,0,1,193,135.91a208.17,208.17,0,0,1,2.32,28.79c0,.53,0,1.07,0,1.6a60.85,60.85,0,0,0,.94,11.86,27.39,27.39,0,0,0,1.28,4.58,17.49,17.49,0,0,0,1.84,3.59,11.74,11.74,0,0,0,9.7,5.46,12.34,12.34,0,0,0,7.22-2.47A21.12,21.12,0,0,0,222,183a43.56,43.56,0,0,0,4.36-10.12c-.71,11.59-5,21.86-12.85,31.15a44.25,44.25,0,0,1-24.6,15,46.32,46.32,0,0,1-10,1.14,41.66,41.66,0,0,1-21.3-5.94c-13.26-7.78-21.23-19.44-24.38-35.65a57.47,57.47,0,0,1-.86-10.88,67.94,67.94,0,0,1,7.4-31.6,107.7,107.7,0,0,1,12.25-18c.81-1,1.62-2,2.44-3,2.39-2.93,4.85-6,7.19-9.13A64.24,64.24,0,0,0,170,91.22a44.7,44.7,0,0,0,2.35-7.91m-4-14.69a3.41,3.41,0,0,0-1.48.35,3,3,0,0,0-1.8,3q0,1.41.06,2.82a35.19,35.19,0,0,1-2.6,13.48,57.77,57.77,0,0,1-7.47,12.8c-3,4.07-6.25,7.94-9.42,11.87a115,115,0,0,0-13.14,19.42,76.3,76.3,0,0,0-8.28,35.23,65.41,65.41,0,0,0,1,12.42c3.44,17.77,12.44,31.79,28.19,41a49.33,49.33,0,0,0,25.34,7,54.65,54.65,0,0,0,11.79-1.33,52.05,52.05,0,0,0,29-17.59c12.79-15.07,17-32.56,13.85-51.91-1.65-10.12-5.34-19.55-10-28.61a6.12,6.12,0,0,0-.63-1,2.41,2.41,0,0,0-1.84-.9,2.29,2.29,0,0,0-1,.22c-.92.44-1.15,1-.85,2.4a101.78,101.78,0,0,1,2.11,14.84A76.18,76.18,0,0,1,219,169.52a36.23,36.23,0,0,1-3.84,9.31,13.14,13.14,0,0,1-3.48,4,4.36,4.36,0,0,1-2.52.95,3.79,3.79,0,0,1-3.08-1.95,9.76,9.76,0,0,1-1-2,19.52,19.52,0,0,1-.9-3.29,64.23,64.23,0,0,1-.8-12,215.12,215.12,0,0,0-2.42-29.89,144.1,144.1,0,0,0-9.2-33.58,95.23,95.23,0,0,0-16.87-27.31,58.28,58.28,0,0,0-4.3-4.31,3.14,3.14,0,0,0-2.12-.86Z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <h1 style="padding: 0px; font-family: sans-serif; font-size: 7px; mso-height-rule: exactly; line-height: 15px; font-weight: lighter;">ANCIENT OS</h1>
+                      </a>
+                    </center>
+                  </tr>
+                  <br>
+                  <tr>
+                    <center style="width: 400px;">
+                      <a href="https://sourceforge.net/projects/builds-ardjlon/files/surya/" style="border-radius: 10px; height:15px; width:60px;" class="btnout out">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 355.09 312.61">
+                        <g id="Capa_4" data-name="Capa 4">
+                          <g id="Capa_4-1" data-name="Capa 4">
+                            <path d="M175.82,8c-9.63,9.66-22.54,22.59-35.15,35.21L106.49,77.46,46.08,138l-.24.23-.91.93A13.79,13.79,0,0,0,45,159c3.61,3.64,7.29,7.33,10.84,10.89l3.79,3.8c12.86,12.89,30.79,30.87,48.69,48.8l46.79,46.89c-1.21,1.24-2.43,2.47-3.64,3.7-2.94,3-6,6.07-9,9.11l-44.3-44.29L9.34,149.07,24.42,134c40.22-40.22,90.25-90.25,126-126h25.45m9.77-8H148.18a11.13,11.13,0,0,0-3.12,2C104.05,43.05,43,104.08,2,145.1c-.26.27-.54.53-.78.81a4.74,4.74,0,0,0,.2,6.54l.88.89L138.14,289.19c.39.39.76.78,1.16,1.14a4.77,4.77,0,0,0,3.24,1.36,4.53,4.53,0,0,0,3.24-1.43c5.77-5.81,11.5-11.66,17.25-17.49a4.83,4.83,0,0,0-.08-6.83c-.37-.33-.71-.7-1.06-1.06-25.53-25.6-71.07-71.21-96.6-96.81-4.87-4.89-9.75-9.76-14.61-14.67a5.86,5.86,0,0,1,0-8.67c.34-.36.7-.71,1.05-1.06l60.41-60.56c18.26-18.3,56.52-56.6,74.77-74.91a11.71,11.71,0,0,0,1.26-1.38A4.22,4.22,0,0,0,186.59.48c-.33-.17-.66-.32-1-.48Z"/>
+                            <path d="M212.69,30.23l36.48,36.53C265,82.58,281,98.67,291.6,109.26l6.27,6.28,48.21,48.3C324,185.92,253.2,256.67,205.31,304.61H179L308.92,174.69l.39-.39c.44-.42,1-1,1.52-1.56a13.85,13.85,0,0,0,3.06-13.46,13.15,13.15,0,0,0-3.47-5.69L213.21,56.4,199.87,43.05l2-2,10.83-10.83m.22-9.72a4.2,4.2,0,0,0-1.14.17,5.18,5.18,0,0,0-2.2,1.35L192.2,39.41l-.35.35A4.81,4.81,0,0,0,192,46.5c.22.19.41.41.61.61C223.33,77.83,274,128.54,304.77,159.25a5.34,5.34,0,0,1,1.44,2.28,5.92,5.92,0,0,1-1.37,5.91c-.5.56-1,1.06-1.58,1.59L168.54,303.74a21.66,21.66,0,0,0-1.56,1.62,4.25,4.25,0,0,0,2.46,7c.27.05.6,0,.78.27h36.92a6.91,6.91,0,0,0,3.73-2.25c40.58-40.62,101.18-101.21,141.79-141.79,1.34-1.34,2.4-2.7,2.43-4.66v-.75c-.34-.42-.15-1-.33-1.43a6.26,6.26,0,0,0-1.56-2.08l-55.94-56C277.12,83.42,237,43.24,216.84,23.06c-.56-.56-1.12-1.12-1.71-1.65a3.21,3.21,0,0,0-2.22-.9Z"/>
+                            <path d="M172.38,83.31a89.94,89.94,0,0,1,11.94,20.87A135.38,135.38,0,0,1,193,135.91a208.17,208.17,0,0,1,2.32,28.79c0,.53,0,1.07,0,1.6a60.85,60.85,0,0,0,.94,11.86,27.39,27.39,0,0,0,1.28,4.58,17.49,17.49,0,0,0,1.84,3.59,11.74,11.74,0,0,0,9.7,5.46,12.34,12.34,0,0,0,7.22-2.47A21.12,21.12,0,0,0,222,183a43.56,43.56,0,0,0,4.36-10.12c-.71,11.59-5,21.86-12.85,31.15a44.25,44.25,0,0,1-24.6,15,46.32,46.32,0,0,1-10,1.14,41.66,41.66,0,0,1-21.3-5.94c-13.26-7.78-21.23-19.44-24.38-35.65a57.47,57.47,0,0,1-.86-10.88,67.94,67.94,0,0,1,7.4-31.6,107.7,107.7,0,0,1,12.25-18c.81-1,1.62-2,2.44-3,2.39-2.93,4.85-6,7.19-9.13A64.24,64.24,0,0,0,170,91.22a44.7,44.7,0,0,0,2.35-7.91m-4-14.69a3.41,3.41,0,0,0-1.48.35,3,3,0,0,0-1.8,3q0,1.41.06,2.82a35.19,35.19,0,0,1-2.6,13.48,57.77,57.77,0,0,1-7.47,12.8c-3,4.07-6.25,7.94-9.42,11.87a115,115,0,0,0-13.14,19.42,76.3,76.3,0,0,0-8.28,35.23,65.41,65.41,0,0,0,1,12.42c3.44,17.77,12.44,31.79,28.19,41a49.33,49.33,0,0,0,25.34,7,54.65,54.65,0,0,0,11.79-1.33,52.05,52.05,0,0,0,29-17.59c12.79-15.07,17-32.56,13.85-51.91-1.65-10.12-5.34-19.55-10-28.61a6.12,6.12,0,0,0-.63-1,2.41,2.41,0,0,0-1.84-.9,2.29,2.29,0,0,0-1,.22c-.92.44-1.15,1-.85,2.4a101.78,101.78,0,0,1,2.11,14.84A76.18,76.18,0,0,1,219,169.52a36.23,36.23,0,0,1-3.84,9.31,13.14,13.14,0,0,1-3.48,4,4.36,4.36,0,0,1-2.52.95,3.79,3.79,0,0,1-3.08-1.95,9.76,9.76,0,0,1-1-2,19.52,19.52,0,0,1-.9-3.29,64.23,64.23,0,0,1-.8-12,215.12,215.12,0,0,0-2.42-29.89,144.1,144.1,0,0,0-9.2-33.58,95.23,95.23,0,0,0-16.87-27.31,58.28,58.28,0,0,0-4.3-4.31,3.14,3.14,0,0,0-2.12-.86Z"/>
+                          </g>
+                        </g>
+                      </svg>
+                      <h1 style="font-family: sans-serif; font-size: 7px; mso-height-rule: exactly; line-height: 15px; font-weight: lighter;">EVOLUTION X</h1>
+                      </a>
+                    </center>
+                  </tr>
+                  </tr>
+                  
+                </table>
+                </tr>
+                
+              </table>
+              <br>
+            </table></td>
+          </tr>
+          
+          <tr> </tr>
+        </table>
+      </div>
+    </center></td>
+  </tr>
+  
+</table>
+</body>
+</html>
